@@ -11,7 +11,7 @@ import (
   Therefore, instead of attaching ToJSON method with book, a separate component is created for that functionality.
 */
 
-func main() {
+func singleResponsibilityPrinciple() {
 	// initializing 2 variables of type book
 	b1 := NewBook().
 		SetTitle("Book 1").
