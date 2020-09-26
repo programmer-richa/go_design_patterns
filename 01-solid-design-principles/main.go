@@ -4,5 +4,6 @@ func main() {
 	// singleResponsibilityPrinciple()
 	// openClosedPrinciple()
 	// LiskovSubstitutionPrinciple()
-	InterfaceSegregationPrinciple()
+	// InterfaceSegregationPrinciple()
+	DependencyInversionPrinciple()
 }
