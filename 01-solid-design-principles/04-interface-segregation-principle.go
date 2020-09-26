@@ -5,6 +5,9 @@ import "fmt"
 /********************************************************************************
 In the field of software engineering, the interface-segregation principle (ISP)
 states that no client should be forced to depend on methods it does not use
+
+In the following example Rect struct need not to implement Volume interface as it
+is not required in it.
 */
 
 type Area interface {
