@@ -5,7 +5,8 @@ import (
 )
 
 /***********************************************************
-* According to this principle, a component is responsible
+* Separate of concerns
+ According to this principle, a component is responsible
   In the following example Book struct is responsible for holding information of a book
   A separate JsonHelper struct is responsible to write Json Data.
   Therefore, instead of attaching ToJSON method with book, a separate component is created for that functionality.
