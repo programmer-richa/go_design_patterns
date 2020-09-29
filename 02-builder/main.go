@@ -22,4 +22,18 @@ func main() {
 	cb.Lives().Address("XYZ Street").City("Delhi").Pincode("111111")
 	c := cb.Build()
 	fmt.Println(c)
+
+	// b := &EmailBuilder{}
+	// email := b.From("foo@bar.com").
+	// 	To("bar@baz.com").
+	// 	Subject("Meeting").
+	// 	Body("Hello, do you want to meet?").
+	// 	Build()
+	// Builder Parameters
+	SendEmail(func(b *EmailBuilder) {
+		b.From("foo@bar.com").
+			To("bar@baz.com").
+			Subject("Meeting").
+			Body("Hello, do you want to meet?")
+	})
 }
