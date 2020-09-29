@@ -16,4 +16,10 @@ func main() {
 	r := pb.Name("Richa").Position("Software Developer").Build()
 	fmt.Println(r)
 
+	// Using Builder Facets
+	cb := NewCustomerBuilder()
+	cb.Works().Address("ABC Street").City("Delhi").Pincode("111111")
+	cb.Lives().Address("XYZ Street").City("Delhi").Pincode("111111")
+	c := cb.Build()
+	fmt.Println(c)
 }
